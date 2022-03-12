@@ -1,14 +1,12 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 const image_btn = require('./images/icon-dice.svg').default
 const divider = require('./images/pattern-divider-desktop.svg').default
 
 export const App = () => {
 
-    const [advice, updateAdvice] = useState('')
-    const [adviceNumber, updateAdviceNumber] = useState(1)
-    const [disabled, updateDisabled] = useState(true)
-
-    useEffect(() => {generateAdvice()}, [])
+    const [advice, updateAdvice] = useState('It is easy to sit up and take notice, What is difficult is getting up and taking action.')
+    const [adviceNumber, updateAdviceNumber] = useState(117)
+    const [disabled, updateDisabled] = useState(false)
 
 
     const generateAdvice = async () => {
